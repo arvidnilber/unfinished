@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,UAAU;EACN,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,uBAAuB;EAC/B,WAAW,EAAC,GAAG;;;AAGhB,UAAU;EACN,WAAW,EAAE,mBAAmB;EAChC,GAAG,EAAE,4BAA4B;EACpC,WAAW,EAAC,GAAG",
+    "sources": [
+        "typography.scss"
+    ],
+    "names": [],
+    "file": "typography.css"
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Imports the stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Imports the fonts -->
+    <link rel="stylesheet" href="assets/fonts/font.css">
+    <!-- Favicon -->
+    <link rel=icon type="image/png" href="assets/img/favicon.png" sizes=32x32 />
+    <!-- Imports Material Icons from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    <!-- Imports Waves.js -->
+    <script type="text/javascript" src="assets/js/waves.js"></script>
+    <!-- Imports Animation On Scrolls stylesheet -->
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <!-- Imports Animation On Scrolls javascript -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Import jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Title -->
+    <title>Sinus Surfboards</title>
+</head>
+<body>
+    <!-- Header -->
+    <section id="pc-header" role="heading">
+            <div class="pc-header" id="navbar">
+                <a href="#intro"><img src="assets/img/logo.svg" class="menu-logo"></a>
+                <nav>
+                    <ul>
+                        <li><a class="waves-effect waves-light hvr-underline-from-center" href="#intro">Home</a></li>
+                        <li><a class="waves-effect waves-light hvr-underline-from-center" href="#surfboards">About</a></li>
+                        <li><a class="waves-effect waves-light hvr-underline-from-center" href="#customize">Build</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </section>
+
+    <!-- Header for mobile -->
+    <section id="mobile-navbar" role="heading">
+        <div class="mobile-header" id="mobile-navbar">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                <ul id="menu">
+                    <a href="#intro" class="first-link waves-effect waves-light">Home</a>
+                    <a href="#surfboards" class="waves-effect waves-light">About</a>
+                    <a href="#customize" class="waves-effect waves-light">Build</a>
+                </ul>
+            </div>
+            <a href="#intro"><img src="assets/img/logo.svg" class="menu-logo-mobile"></a>
+        </div>
+    </section>
+
+    <!-- Landing page intro -->
+    <section id="intro">
+        <div class="intro">
+            <img src="assets/img/sinus-logo-symbol.svg" class="intro-logo">
+            <h1>Made by surfers, <br> for surfers<b>.</b></h1>
+            <h3>DISCOVER YOUR FREEDOM</h3>
+            <a href="#surfboards"><img src="assets/img/down-arrow.svg" class="down-arrow" /></a>
+        </div>
+    </section>
+
+    <!-- Fades image to background-color of  next section -->
+    <div class="intro-fader"></div>
+
+    <!-- About Sinus surfboards -->
+    <div id="surfboards">
+        <div class="left-column">
+                <h2 data-aos="fade-up" data-aos-duration="2000" >Our surfboards<b>.</b></h2>
+                <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis. Egestas purus viverra accumsan in nisl. Elementum sagittis vitae et leo duis ut diam quam. Sed sed risus pretium quam vulputate. Sem integer vitae justo eget magna fermentum iaculis eu non. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Pretium lectus quam id leo. Ornare arcu odio ut sem nulla pharetra diam. Elementum curabitur vitae nunc sed velit.
+                </p>
+        </div>
+        <div class="right-colum">
+            <center>
+                <img data-aos="fade-up" data-aos-duration="3000" src="assets/img/surfboard.png" class="board"> 
+            </center>
+        </div>
+    </div>
+
+    <!-- Build your sinus -->
+    <div id="customize">
+        <div class="box">
+            <h2 data-aos="fade-up" data-aos-duration="1000" >Customize your Sinus<b>.</b></h2>
+            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Choose your surfboard size<b>.</b></h3>
+            <div class="container">
+                    <div class="size" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <input type="checkbox" id="sizeControl">
+                        <label class="btn" for="sizeControl"><div class="size-btn">7′2"</div></label>
+                    </div>
+                    <div class="size" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <input type="checkbox" id="size1Control">
+                        <label class="btn" for="size1Control"><div class="size-btn">7′4"</div></label>
+                    </div>
+                    <div class="size" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <input type="checkbox" id="size2Control">
+                        <label class="btn" for="size2Control"><div class="size-btn">7′6"</div></label>
+                    </div>
+                    <div class="size" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <input type="checkbox" id="size3Control">
+                        <label class="btn" for="size3Control"><div class="size-btn">7′8"</div></label>
+                    </div>                
+            </div>
+            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Choose your surfboard color<b>.</b></h3>
+            <div class="container">
+                <div class="colors" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <input type="checkbox" id="whiteControl">
+                    <label class="btn" for="whiteControl"><div class="color-btn white"></div></label>
+                </div>
+                <div class="colors" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    <input type="checkbox" id="redControl">
+                    <label class="btn" for="redControl"><div class="color-btn red"></div></label>
+                </div>
+                <div class="colors" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                    <input type="checkbox" id="yellowControl">
+                    <label class="btn" for="yellowControl"><div class="color-btn yellow"></div></label>
+                </div>
+                <div class="colors" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <input type="checkbox" id="greenControl">
+                    <label class="btn" for="greenControl"><div class="color-btn green"></div></label>
+                </div>                
+            </div>
+            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">Your result<b>.</b></h3>
+            <img src="assets/img/boards_white.png" class="finalboard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"/>
+        </div>         
+    </div>    
+
+    <!-- Inspiration section  -->
+    <div id="inspo" >
+        <div class="inspiration">
+            <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">"Sinus man, it's the best<b>.</b>"</h1>
+            <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">- John Florence</h3>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="assets/img/sinus-logo-symbol.svg">
+        <p>	&copy; Sinus Surfboards 2018 </p>
+    </div>
+
+    <!-- Initializes Animation on Scroll -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Adds smooth href -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        });
+    </script>
+    <!-- Adds background color to mobile navbar on scroll -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if($(document).scrollTop() > 200) {
+                $('#mobile-navbar').addClass('scroll');
+            }
+            else {
+            $('#mobile-navbar').removeClass('scroll');
+            }
+        }
+    </script>
+    <!-- Delays the href to see some sweet animations -->
+    <script>
+        $('a').click(function (e) {
+        e.preventDefault();                   // prevent default anchor behavior
+        var goTo = this.getAttribute("href"); // store anchor href
+
+        setTimeout(function(){
+            window.location = goTo;
+        },500);       
+        }); 
+    </script>
+</body>
+</html>
