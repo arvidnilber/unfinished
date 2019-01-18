@@ -12,7 +12,6 @@ body {
     justify-content: center;
     align-items:center;
 }
-
 #landing {
     color:white;
     height:100vh;
@@ -137,7 +136,7 @@ body {
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
     #info {
         width:100%;
         h2 {

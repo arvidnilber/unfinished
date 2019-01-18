@@ -280,7 +280,7 @@ body {
   grid-row: 4/5;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   #info {
     width: 100%;
   }
