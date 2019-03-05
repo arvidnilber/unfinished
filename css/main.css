@@ -146,7 +146,7 @@
 
 body {
   margin: 0;
-  background: #fd8d8d;
+  background: #dddddd;
   font-weight: 400;
   font-family: 'Product Sans', sans-serif;
 }
@@ -212,7 +212,7 @@ body {
 
 #info {
   height: auto;
-  color: white;
+  color: black;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -221,7 +221,6 @@ body {
   text-align: center;
   margin-top: 40px;
   font-size: 2em;
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.18);
 }
 
 #info #messages {
@@ -242,6 +241,7 @@ body {
   width: 350px;
   height: 100px;
   font-size: 15px;
+  color: white;
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.17);
           box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.17);
@@ -284,7 +284,7 @@ body {
   grid-row: 4/5;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 500px) {
   #info {
     width: 100%;
   }
@@ -301,7 +301,7 @@ body {
     width: 90%;
   }
   #info #messages .message {
-    width: 185px;
+    width: 100%;
     height: 110px;
     font-size: 12px;
     margin-bottom: 10px;
@@ -446,5 +446,160 @@ body {
   background-color: #a2beff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+#shop-mobile {
+  display: none;
+  background: #F9A7A7;
+  height: auto;
+}
+
+#shop-mobile .items {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+#shop-mobile .items h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#shop-mobile .items .item .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+#shop-mobile .items .item .content h4 {
+  font-size: 1.4rem;
+  color: white;
+}
+
+#shop-mobile .items .item .content img {
+  width: 400px;
+}
+
+#shop-mobile .items .item .content .button {
+  height: 50px;
+  width: 170px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 10px;
+  z-index: 40;
+  padding-left: 10px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  background-color: #7BA3FF;
+  color: white;
+  border-radius: 90px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.28);
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.28);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#shop-mobile .items .item .content .button:hover {
+  background-color: #a2beff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  #shop {
+    display: none !important;
+  }
+  #shop-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+#about h2 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+ul {
+  padding: 0px;
+}
+
+/* Message Bubbles */
+ul.rounded-messages li {
+  position: relative;
+  clear: both;
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: 50%;
+  word-wrap: break-word;
+  word-break: keep-all;
+  font-family: sans-serif;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 10px 10px;
+  padding: 25px 35px 25px 35px;
+  cursor: default;
+}
+
+/* Left Message Bubble */
+ul.rounded-messages li:not(.right-msg),
+ul.rounded-messages li.left-msg {
+  float: left;
+  color: #fff;
+  background: #54C7FC;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 57px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 100px;
+}
+
+/* Right Message Bubble */
+ul.rounded-messages li.right-msg {
+  float: right;
+  color: #fff;
+  background: #54C7FC;
+  margin-right: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 57px;
+}
+
+@media screen and (max-width: 700px) {
+  /* Fit the screen for all chats */
+  ul.rounded-messages,
+  .messages-width-large,
+  .messages-width-medium,
+  .messages-width-small {
+    width: 100%;
+    display: block;
+  }
+  #hej {
+    width: 80% !important;
+  }
+}
+
+#hej {
+  width: 30%;
+  margin: 0 auto;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
