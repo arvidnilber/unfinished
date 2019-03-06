@@ -452,6 +452,7 @@ body {
   display: none;
   background: #F9A7A7;
   height: auto;
+  width: 100%;
 }
 
 #shop-mobile .items {
@@ -594,12 +595,13 @@ ul.rounded-messages li.right-msg {
   }
   #hej {
     width: 80% !important;
+    height: 72vh !important;
   }
 }
 
 #hej {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
-  height: 100vh;
+  height: 65vh;
 }
 /*# sourceMappingURL=main.css.map */
