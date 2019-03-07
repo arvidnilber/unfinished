@@ -435,12 +435,16 @@ ul.rounded-messages li.right-msg
   }
   #hej {
       width: 80% !important;
-      height: 72vh !important;
+      height: 75vh !important;
   }
+  ul.rounded-messages li {
+      max-width: none !important;
+  }
+
 }
 
 #hej {
     width:40%;
     margin:0 auto;
-    height:65vh;
+    height:70vh;
 }
