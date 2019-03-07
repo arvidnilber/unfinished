@@ -151,6 +151,18 @@ body {
   font-family: 'Product Sans', sans-serif;
 }
 
+#shop-mobile .items .item .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #landing {
   color: white;
   height: 100vh;
@@ -312,7 +324,7 @@ body {
     padding-right: 20px;
     padding-bottom: 20px;
   }
-  #info #messages .message p:nth-child() {
+  #info #messages .message p:nth-child {
     padding-left: 0px;
     padding-right: 10px;
   }
@@ -490,7 +502,7 @@ body {
 }
 
 #shop-mobile .items .item .content img {
-  width: 400px;
+  width: 300px;
 }
 
 #shop-mobile .items .item .content .button {
@@ -521,7 +533,7 @@ body {
   transition: 0.5s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   #shop {
     display: none !important;
   }
