@@ -315,7 +315,9 @@ body {
                 display:flex;
                 flex-direction: column;
                 margin:0 auto;
+                margin-bottom: 20px;
                 @extend %center;
+
 
                 h4 {
                     font-size: 1.4rem;
@@ -341,8 +343,10 @@ body {
                     text-transform: uppercase;
                     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
                     transition: 0.5s;
+                    margin: 0 auto;
+                    margin-top: 10px;
                     &:hover {
-                        background-color: rgb(162, 190, 255);
+                        background-color: #a2beff;
                         transition: 0.5s;
                     }
                 }
@@ -368,6 +372,7 @@ body {
 }
 ul {
     padding: 0px;
+    height:100%;
 }
 /* Message Bubbles */
 ul.rounded-messages li 
@@ -422,7 +427,7 @@ ul.rounded-messages li.right-msg
 
 
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 800px)
 {
   /* Fit the screen for all chats */
   ul.rounded-messages,
@@ -433,18 +438,23 @@ ul.rounded-messages li.right-msg
     width: 100%;
     display: block;
   }
-  #hej {
-      width: 80% !important;
-      height: 75vh !important;
-  }
+  
   ul.rounded-messages li {
-      max-width: none !important;
+      max-width: 60% !important;
+  }
+  #hej {
+      width: 80vw;
+      margin: 0 auto;
+  }
+  #info {
+      h2 {
+        font-size:1em !important;
+      }
   }
 
 }
 
 #hej {
-    width:40%;
-    margin:0 auto;
-    height:90vh;
+    display:flex;
+    @extend %center;
 }
