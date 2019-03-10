@@ -145,6 +145,11 @@
   transition: all 0.4s;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   background: #dddddd;
@@ -165,6 +170,7 @@ body {
 }
 
 #landing {
+  display: inline-block;
   color: white;
   height: 100vh;
   width: 100%;
@@ -178,6 +184,7 @@ body {
   padding-top: 100px;
   font-size: 55px;
   font-weight: 400;
+  padding-bottom: 40px;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.18);
   padding-left: 70px;
 }
@@ -188,6 +195,10 @@ body {
   padding-left: 70px;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
   margin-top: -20px;
+}
+
+#landing .arrow {
+  display: none;
 }
 
 #landing #header {
@@ -205,16 +216,53 @@ body {
 @media screen and (max-width: 800px) {
   #landing {
     text-align: center;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #landing h2 {
     padding-top: 140px;
+    padding-bottom: 40px;
     font-size: 40px;
     padding-left: 0px;
     text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.18);
   }
+  #landing .arrow {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 10vw;
+    width: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: border-width 150ms ease-in-out;
+    transition: border-width 150ms ease-in-out;
+  }
+  #landing .arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
   #landing h4 {
     font-size: 20px;
     padding-left: 0px;
+  }
+  #landing #header {
+    margin-top: -70px;
   }
   #landing #header img {
     height: 100px;
@@ -302,6 +350,8 @@ body {
     width: 100%;
   }
   #info h2 {
+    font-size: 1.6rem;
+    padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -421,6 +471,8 @@ body {
   color: white;
   font-size: 18px;
   font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 #shop .shop-items > * .content h4 b {
@@ -431,7 +483,7 @@ body {
 #shop .shop-items > * .content img {
   z-index: 0;
   width: 400px;
-  height: 300px;
+  height: 260px;
 }
 
 #shop .shop-items > * .button {
@@ -483,6 +535,7 @@ body {
 #shop-mobile .items h2 {
   color: white;
   font-size: 2rem;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -501,6 +554,9 @@ body {
 #shop-mobile .items .item .content h4 {
   font-size: 1.4rem;
   color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
 }
 
 #shop-mobile .items .item .content img {
@@ -548,10 +604,25 @@ body {
   }
 }
 
+#about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #555555;
+}
+
 #about h2 {
   color: white;
   text-align: center;
   font-size: 2rem;
+}
+
+#about p {
+  font-size: 1.5rem;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: white;
 }
 
 ul {
@@ -619,6 +690,13 @@ ul.rounded-messages li.right-msg {
   }
   #info  h2 {
     font-size: 1em !important;
+  }
+  #about h2 {
+    font-size: 1.6rem;
+  }
+  #about p {
+    width: 90%;
+    font-size: 1.2rem;
   }
 }
 
