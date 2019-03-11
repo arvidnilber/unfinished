@@ -71,6 +71,7 @@ body {
         display:flex !important;
         justify-content: center;
         align-items:center;
+        background-image: url('../img/splash_ipad.png');
         flex-direction: column;
         h2 {
             padding-top: 140px;
@@ -87,15 +88,20 @@ body {
             display:flex;
             border-style: solid;
             border-color: white;
-            border-width: 0px 1px 1px 0px;
+            border-width: 0px 2px 2px 0px;
             transform: rotate(45deg);
+            box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.23);
             transition: border-width 150ms ease-in-out;
+            &:hover {
+                border-bottom-width: 4px;
+                border-right-width: 4px;
+            }
+            &:focus {
+                border-bottom-width: 4px;
+                border-right-width: 4px;
+            }
           }
-          
-        .arrow:hover {
-        border-bottom-width: 4px;
-        border-right-width: 4px;
-        }
+        
         h4 {
             font-size:20px;
             padding-left: 0px;

@@ -225,6 +225,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-image: url("../img/splash_ipad.png");
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -247,13 +248,19 @@ body {
     display: flex;
     border-style: solid;
     border-color: white;
-    border-width: 0px 1px 1px 0px;
+    border-width: 0px 2px 2px 0px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.23);
+            box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.23);
     -webkit-transition: border-width 150ms ease-in-out;
     transition: border-width 150ms ease-in-out;
   }
   #landing .arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+  #landing .arrow:focus {
     border-bottom-width: 4px;
     border-right-width: 4px;
   }
